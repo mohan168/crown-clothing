@@ -21,7 +21,7 @@ import {auth, createUserProfileDocument } from '../../components/firebase/fireba
          event.preventDefault();
 
          const { displayName,email,password,confirmPassword} = this.state;
-         if(password != confirmPassword){
+         if(password !== confirmPassword){
              alert('password dont match');
              return;
          }
